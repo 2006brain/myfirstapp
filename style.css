@@ -1,0 +1,110 @@
+.container {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.newsletter button {
+  background: lightgreen;
+  border: none;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  
+}
+
+.newsletter {
+  color: grey;
+  border: solid thin grey;
+  padding: 10px;
+  border-radius: 3px;
+  padding-bottom: 20px;
+  
+  position: relative;
+}
+
+.newsletter h3 {
+  margin-top: 0;
+}
+
+.newsletter input#email {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border: solid grey 1px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.newsletter #accept {
+  position: relative;
+  top: 1px;
+}
+
+.newsletter #closex {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  
+}
+
+#mark {
+  background: lightgreen;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  
+}
+
+.card {
+  background-color: lightgreen;
+  width: 180px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  padding: 20px 0;
+  box-shadow: 0px 0px 7px 2px grey; 
+  
+  /* 1. szam: vizszintes tengejeb való eltolás
+     2. szam: fuggoleges tengelyeb valo eltolás (lejjebb csußik)
+     3. szam: arnyek mennyire legyen elmosódva
+     4. szam: arnyek kiterjedese 
+      
+  Div block tipusu elem, ezert vannak a kepek alapbol egymas alatt
+  
+    Az inline tipusu elemeknek nincs szelessege es magassaga, akkorak csak mindig, amekkora helyet elfoglalnak
+      */ 
+  
+}
+
+
+#boxes { 
+  display: flex;
+  justify-content: space-between;
+    
+  /* justfi-content: space between --> automatikusan hagyjon ki egyenlo helyeket a felxboxon belül levö elemek között
+     justify-content: flex-start --> minden egyes elem a flexboxnak az elejhez kerül, 
+     justify-content: flex-end --> ~ a végéhez kerül
+     justify-content: space-around --> annyi különbseg h az elsö és utolso doboz utan is marad ki egy kis hely */
+  
+}
+
+.card h3 {
+  margin-bottom: 0
+}
+
+/*   <div class="card middle"> ennek a HTML elemnek most ket osztalya is van, Card es Middle. 
+
+  .card.middle :  Az a card aminek middle osztalya is van. vagyis azokat az elemeket valasztom ki, aminek card es aminek middle osztalya is van. NINCS SZOKÖZ.  
+
+.card .middle : azok az emlemek lesznek kivalsztva, amik a card osztalyon belül levo middle elemek. VAN SZÓKÖZ.
